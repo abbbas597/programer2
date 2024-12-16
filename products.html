@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>نظام إدارة المنتجات</h1>
+        
+        <!-- إضافة حقل البحث -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="ابحث عن منتج..." class="search-input">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="form-container">
+            <h2>إضافة منتج جديد</h2>
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="اسم المنتج" required>
+                <input type="number" id="productPrice" placeholder="السعر" required>
+                <input type="text" id="productDescription" placeholder="وصف المنتج">
+                <button type="submit" class="btn-add">إضافة منتج</button>
+            </form>
+        </div>
+
+        <div class="products-container">
+            <h2>قائمة المنتجات</h2>
+            <div id="productsList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
